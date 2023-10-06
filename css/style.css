@@ -1,0 +1,404 @@
+/* Common css start */
+:root{
+    --primary-font: 'Ubuntu', sans-serif;
+    --secondary-font: 'Abril Fatface', cursive;
+    --heading-font: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h4,h5,h6,p,ul,ol,li{
+    margin: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+.heading{
+    color: #0f2f44;
+}
+h2{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 32px;
+}
+h6{
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 14px;    
+}
+p{
+    font-family: var(--heading-font);
+}
+a{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 20px;
+}
+/* Coommon css end */
+
+/* top bar section start */
+#top-bar{
+    background-color:#0f2f44;
+    color: #fefefe;
+    padding: 19px 0;
+    font-family: var(--primary-font);
+}
+/* top bar section end */
+
+ /* Nav Bar section start */
+#menu-bar #menu ul li a{
+    padding: 32px 19px;
+    font-size: 16px;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    color: #222222;
+}
+.navbar {
+    padding: 0;
+}
+#menu-bar #menu ul li a:hover,
+#menu-bar #menu ul li button:hover{
+    color: #ffc712;    
+    background-color: #fff9e6;
+    transition: 0.5s;
+}
+#menu-bar #menu ul li button{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 1px solid #a6a6a6;
+}
+ /* Nav Bar section end */
+
+/* Banner section start */
+#banner{
+    height: 600px;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#banner h2{
+    font-size: 50px;
+    font-weight: 300;
+    font-family: var(--primary-font);
+}
+#banner h1{
+    font-size: 80px;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+}
+#banner h3{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 32px;
+    color: #8484bf;
+    letter-spacing: 8px;
+}
+#banner a{
+    padding: 16px 20px;
+    background-color: #ffffff;
+    color: #8484bf;
+    border-radius: 5%;
+    box-shadow: 0 7px 20px rgba(132,132,191,0.15);
+}
+#banner button{
+    color: #8484bf;
+    margin: 21px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 7px 20px rgba(132,132,191,0.15);
+}
+#banner a:hover,
+#banner button:hover{
+    color: #ffffff;
+    background-color: #8484bf;
+    transition: 0.5s;
+}
+@media only screen and (max-width:575px) {
+    #banner{
+        width: 100%;
+    }
+    #banner h1,h2,h3{
+        font-size: 40px;
+    }
+
+}
+/* Banner section end */
+
+/* About section end */
+#about{
+    padding: 98px 0;
+}
+#about h6{
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 14px;
+}
+#about h2{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 32px;
+}
+#about a{
+    padding: 15px 20px;
+    margin: 32px 20px;
+    background-color: #ffffff;
+    color: #0f2f44;
+    border-radius: 5%;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+}
+#about a:hover{
+    background-color: #ffc712;
+    transition: 0.5s;
+}
+/* About section end */
+
+/* Our Skills section start */
+#skills{
+    margin-bottom: 98px;
+}
+/* Our Skills section end */
+
+/* Our Service section start */
+#service{
+    background-image: url(../img/service.bg.jpg);
+    padding-bottom: 80px;
+}
+#service .heading{
+    padding: 58px 0;
+}
+#service .service-box{
+    padding: 30px 0;
+    border-radius: 5%;
+    background-color: #e9e9e9;
+    position: relative;
+}
+#service .service-box .service-icon{
+    width: 100px;
+}
+#service .service-box .service-info{
+    width: calc(100% - 100px);
+    background-color: #eeeeee;
+}
+#service .service-box .overlay{
+    background-color: #0f2f44;
+    position: absolute;
+    inset: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: 0.5s;
+}
+#service .service-box:hover .overlay{
+    transform: scale(1);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+}
+#service .service-box:hover .overlay h3{
+    padding: 20px 0;
+}
+#service .service-box:hover .overlay i{
+    color: #0f2f44;
+    margin-top: 35px;
+    padding: 11px 14px;
+    display: inline-block;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffc712;   
+}
+/* Our Service section end */
+
+/* Our Portfolio section start */
+#portfolio{
+    padding: 100px 0;
+}
+#portfolio .heading{
+    padding-bottom: 32px;
+}
+#portfolio .portfolio-box{
+    position: relative;
+}
+#portfolio .portfolio-box img{
+    width: 100%;
+}
+#portfolio .portfolio-box:hover{
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+}
+#portfolio .portfolio-box .hover-text{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: 0.5s;
+    text-align: center;
+}
+#portfolio .portfolio-box:hover .hover-text{
+    transform: scale(1);
+    background-color: #ffffff;
+    color: #0f2f44;
+    padding: 29px 0;
+}
+#portfolio a{
+    padding: 12px 19px;
+    margin-top: 60px;
+    background-color: #ffffff;
+    color: #0f2f44;
+    border-radius: 5%;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+}
+#portfolio a:hover{
+    background-color: #ffc712;
+    transition: 0.5s;
+}
+/* Our Portfolio section end */
+
+/* Our Testimonial section start */
+#testimonial{
+    background-image: url(../img/service.bg.jpg);
+    padding: 60px 0;
+}
+#testimonial .heading{
+    padding-bottom: 30px;
+}
+#testimonial .test-box .test-info{
+    color: #0f2f44;
+    padding: 30px 20px;
+}
+#testimonial .test-box .test-info p{
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 14px;
+}
+#testimonial .test-box .test-info h5{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 20px;
+}
+#testimonial .test-box .test-info h4{
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 16px;
+}
+#testimonial .test-box{
+    margin: 15px;
+    border-radius: 3%;
+    background-color: #e9e9e9;
+}
+/* Our Testimonial section end */
+
+/* Our Blogs section start */
+#blogs{
+    padding: 100px 0;
+}
+#blogs .heading{
+    padding-bottom: 30px;
+}
+#blogs .card{
+    background-color: #f5f5f5;
+}
+#blogs .card:hover{
+    color: #ffffff;
+    background-color: #0f2f44;
+    transition: 0.5s;
+    box-shadow: 0 15px 10px 10px rgba(15, 47, 68, 0.15);
+}
+#blogs .button a{
+    padding: 12px 19px;
+    margin-top: 60px;
+    background-color: #ffffff;
+    color: #0f2f44;
+    border-radius: 5%;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+}
+#blogs .button a:hover{
+    background-color: #ffc712;
+    transition: 0.5s;
+}
+/* Our Blogs section end */
+
+/* Footer section start */
+#footer{
+    padding: 97px 0;
+    background-image: url(../img/service.bg.jpg);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+}
+#footer .sec-1 ul li a{
+    border: 1px solid #0f2f44;
+    border-radius: 50%;
+    padding: 13px 15px;
+    color: #0f2f44;
+}
+#footer .sec-1 ul li a:hover{
+    color: #ffffff;
+    background-color: #0f2f44;
+}
+#footer .sec-2 h4{
+    padding-bottom: 20px;
+}
+#footer .sec-2 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#footer .sec-2 ul li i{
+    color: #777777;
+    border: none;
+}
+#footer .sec-2 ul li a{
+    color: #777777;
+}
+#footer .sec-3 h4{
+    padding-bottom: 15px;
+}
+#footer .sec-3 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#footer .sec-3 ul li a{
+    color: #707070;
+}
+#footer .sec-3 ul li a:hover{
+    color: #0f2f44;
+}
+#footer .sec-4 h4{
+    padding-bottom: 32px;
+}
+#footer .sec-4 img{
+    padding-bottom: 20px;
+}
+#footer p{
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 14px;
+}
+#footer h4{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 20px;
+}
+/* Footer section end */
+
+footer{
+    padding: 20px 0;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 14px;
+}
